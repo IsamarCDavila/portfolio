@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/jquery.jscrollpane.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Link-->
     <link rel="stylesheet" href="css/style.css">
+    <!---->
+    <link href='css/jquery.jscrollpane.css' rel="stylesheet" type="text/css">
     <title>Document</title>
+    
+    <!--script librerias-->
+    
+    <script src="js/lib/jquery-2.2.3.min.js"></script>
+    <script src="js/lib/jquery.browser.min.js"></script>
+    <script src="js/lib/jquery.touchSwipe.min.js" ></script>
+    <script src="js/lib/jquery.form.min.js"></script>
+    <script src="js/lib/jquery.mousewheel.js"></script>
+    <script src="js/lib/jquery.jscrollpane.min.js"></script>
+    
+    <!--librerias de movimiento-->
+    <script src="js/lib/functions.js"></script>
+    <script src="js/lib/enquire.min.js"></script>
+    <script src="js/lib/greensock/minified/TimelineLite.min.js"></script>
+    <script src="js/lib/greensock/minified/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/minified/utils/SplitText.min.js"></script>
+    <script src="js/lib/greensock/minified/plugins/DrawSVGPlugin.min.js"></script>
+    <!--<script src="js/lib/greensock/minified/plugins/DrawSVGPlugin.min.js"></script>-->
+    <script src="js/lib/greensock/minified/plugins/ScrambleTextPlugin.min.js"></script>
+    <script src="js/lib/greensock/minified/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/lib/greensock/minified/plugins/AttrPlugin.min.js"></script>
+    <script src="js/lib/greensock/minified/easing/EasePack.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!--librerias para textos-->
+    <script src="js/lib/jquery.fullPage.min.js"></script>
+    <script src="js/lib/fittext.js"></script>
+    <script src="js/lib/bigtext.js"></script>
+    <script src="js/lib/resizeText.js"></script>
+    
+    <script src="js/lib/pixi-3-0-11.js"></script>
+    
+    <!--script-->
+    <script src="js/page_transition.js"></script>
+    <script src="js/navItem_transition.js"></script>
+    <script src="js/other/btn_down.js"></script>
+    <script src="js/page_home.js"></script>
+    <script src="js/page_about.js"></script>
+    <script src="js/page_projects.js"></script>
+    <script src="js/page_contact.js"></script>
+    <script src="js/page_news_blog.js"></script>
 </head>
 <body>
    <!--Parte de carga de la pagina loading-->
@@ -58,14 +104,223 @@
                     
                     <!--Parte de las Habilidades-->
                     
+                    <!--Parte del contact-->
+                       <!--Parte de la imagen de la seccion contactame-->
+                    <div class="contactImageContainer">  
                     
+
+                    <div class="contactImage">
+                        <canvas id="displacementOutput" width="800" height="800"></canvas>
+                        <div id="displacementInput">
+                            <!--imagenes-->
+                            <img id="source" src="images/dnlsptzk_contact.jpg"  />
+                            <img id="map" src="images/displacementmap3.png" />
+                        </div>
+
+
+                        <img id="aniImage" src="http://www.danielspatzek.com/images/dnlsptzk_contact.jpg">
+                    </div>
+                    <div class="contactImageBg"></div>
+
+                </div>
+                   
+                <!---->
+                    <div class="contactBgBoxContainer">
+                    <div class="contactBgBox">
+                        <div class="bgBoxLine bgBoxTop"></div>
+                        <div class="bgBoxLine bgBoxRight"></div>
+                        <div class="bgBoxLine bgBoxBottom"></div>
+                        <div class="bgBoxLine bgBoxLeft"></div>
+
+
+                    </div>
+                </div>
+                
+                   
+                   <!---->
+                   
+                   <div class="contactRow">
+                    <div class="contactContainer contactLeft">
+                        <div class="contactTextContainer">
+                            <div class="contactText"> <div class="text">HI DANIEL,<br>I HAVE A<br>PROJECT, A<br>BUDGET AND<br>A DETAILED <br>BRIEFING!<br>
+                                </div>                      
+                            </div>
+                            <a href="mailto:office@danielspatzek.com">
+
+                                <div class="buttonContainer buttonContainerLeft">
+                                    <div class="contact_openMail button bold" >
+                                        <!--data="mailto:office@danielspatzek.com"-->
+                                        <div class="hoverBG"></div>
+                                        <div class="buttonTextMask"><div class="buttonText">CONTACT</div><div class="hoverText">CONTACT</div></div>
+                                        <div class="buttonLine buttonLineTop"></div>
+                                        <div class="buttonLine buttonLineRight"></div>
+                                        <div class="buttonLine buttonLineBottom"></div>
+                                        <div class="buttonLine buttonLineLeft"></div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div><div class="contactDiagonal"><div class="contactDiagonalWhite"><div class="contactDiagonalBlack"></div></div></div><div class="contactContainer contactRight">
+
+
+                        <div class="contactTextContainer">
+                            <div class="contactText">
+                                <div class="text">HI DANIEL,<br>HOW MUCH<br>DO YOU<br>CHARGE FOR<br>A WEBSITE?<br></div>
+                                <!--<div class="contactText">HI DANIEL,HOW MUCH DO YOU CHARGE FOR A WEBSITE?-->
+                                <div class="buttonContainer buttonContainerRight">
+
+                                    <div class="contact_dummy button bold">
+                                        <div class="hoverBG"></div>
+                                        <div class="buttonTextMask"><div class="buttonText">FIND OUT</div><div class="hoverText">FIND OUT</div></div>
+
+                                        <div class="buttonLine buttonLineTop"></div>
+                                        <div class="buttonLine buttonLineRight"></div>
+                                        <div class="buttonLine buttonLineBottom"></div>
+                                        <div class="buttonLine buttonLineLeft"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
                     
-                    
-                    
-                    
-                </div>   
+                <!---->
+                
+                 
+                <!--Informacion para contactarme-->
+                
+                 <div class="contact_AdressContainer">
+
+                    <div class="contact_Adress">
+                        <p class="addressLine1 ">Isamar Davila Gonzales</p>
+                        <p class="addressLine2 ">Paucarpata, Arequipa</p>
+                        <p class="addressLine3 ">999722195</p>
+                        <p class="addressLine4 "></p>
+                        <p class="addressLine5 ">Isamar Cristina Davila Gonzales,Paucarpata, Arequipa 999722195</p>
+<!--
+                        <a class="addressLine6" href="mailto:office@danielspatzek.com"><div class="addressEmailBg"></div><span class="desktop">o</span><span class="desktop">f</span><span class="desktop">f</span><span class="desktop">i</span><span class="desktop">c</span><span class="desktop">e</span><span class="desktop">[a</span><span class="desktop">t]</span><span class="desktop">d</span><span class="desktop">a</span><span class="desktop">n</span><span class="desktop">i</span><span class="desktop">e</span><span class="desktop">l</span><span class="desktop">s</span><span class="desktop">p</span><span class="desktop">a</span><span class="desktop">t</span><span class="desktop">z</span><span class="desktop">e</span><span class="desktop">k</span><span class="desktop">.</span><span class="desktop">c</span><span class="desktop">o</span><span class="desktop">m</span>
+                            <!--<span class="mobile">office[at]danielspatzek.com</span>-->
+                        <!--</a>-->
+
+                    </div>
+                </div> 
+                
+                
+                <!--Volver al menu-->
+                <div class="page pageProjects" rel="Projects" data-page-transtion="fromBottom">
+                <div class="menuSpatzekLogo menuLogo menuTop ">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.61 291.01" style="display: block; opacity: 1;"><defs><style></style></defs><title>ds_logo_rgb_dark</title><polyline points="58.29 2.34 5.4 61.22 181.08 169.72 5.08 284.54 5.08 170.54" style="stroke-dashoffset: 1e-05; stroke-dasharray: none;"></polyline></svg>
+                </div>
+                <div class="menuCloseLogo menuLogo  menuTop">
+                    <div class="mytcon">
+                        <div class="blockA"></div>
+                        <div class="blockB"></div>
+
+                    </div> 
+
+                </div>
+                <svg class="logoSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.61 291.01"><defs><style></style></defs><title>ds_logo_rgb_dark</title><polyline points="58.29 2.34 5.4 61.22 181.08 169.72 5.08 284.54 5.08 170.54"/></svg>
+                <div class="pageInner">
+
+
+                </div>
+
+                </div>
+                
+                <!--Parte del about me-->
+                
+                <div class="page pageAbout fullscreen" rel="About"
+                 data-page-transtion="fromLeft">
+                <div class="menuSpatzekLogo menuLogo  menuRight">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.61 291.01" style="display: block; opacity: 1;"><defs><style></style></defs><title>ds_logo_rgb_dark</title><polyline points="58.29 2.34 5.4 61.22 181.08 169.72 5.08 284.54 5.08 170.54" style="stroke-dashoffset: 1e-05; stroke-dasharray: none;"></polyline></svg>
+                </div>
+                <div class="menuCloseLogo menuLogo menuRight ">
+                    <div class="mytcon">
+                        <div class="blockA"></div>
+                        <div class="blockB"></div>
+
+                    </div> 
+
+                </div>
+                <div class="imageSlideshow">
+
+                </div>
+
+                <div class="imageSlideShow_mobile">
+                    <img src='http://www.danielspatzek.com/images/daniel_spatzek_01.jpg' data-imgcnt="0" />
+                    <img src='http://www.danielspatzek.com/images/daniel_spatzek_02.jpg' data-imgcnt="1" />
+                    <img src='http://www.danielspatzek.com/images/daniel_spatzek_03.jpg' data-imgcnt="2" />
+                    <img src='http://www.danielspatzek.com/images/daniel_spatzek_04.jpg' data-imgcnt="3" />
+                    <img src='http://www.danielspatzek.com/images/daniel_spatzek_05.jpg' data-imgcnt="4" />
+                </div>
+
+                <div class="pageInner">
+
+                    <div class="scrollListenerC">
+                        <div class="scrollListener"></div>
+                    </div>
+
+
+
+                    <div class="pageContent">
+                        <div class="scrollContainer">
+                            <div class="aboutText">
+
+                                <div class="aboutTextInner">
+                                   
+                                    Hola, mi <br />nombre es <br />Isamar <br />Davila. <br />I'm an award-<br />winning freelance<br /> graphic designer and <br />Art Director from <br />Austria. I also serve as <br />judge at CSS DESIGN AWARDS.<br /><br />
+                                    <br />
+                                    My work ranges from <br />digital design, branding,<br /> illustration and traditional <br />graphic design to photo art <br />direction and conceptual<br /> collages.<br /><br />
+                                    <br />
+                                    In my former career I had <br /> the privilege of working with <br />companies such as Mentos,<br /> Fishermens Friend, bet-at-home, <br />Fisher Sports, voest Alpine <br />and many more.<br /><br />
+
+                                </div>
+
+                                <div class="aboutTextInnerMobile">
+                                    Hi, my name is Daniel Spatzek. I'm an award-winning freelance graphic designer and Art Director from Austria. I also serve as judge at CSS DESIGN AWARDS.
+                                    <br /><br />
+                                    My work ranges from digital design, branding, illustration and traditional graphic design to photo art direction and conceptual collages.
+                                    <br /><br />
+                                    In my former career I had the privilege of working with companies such as Mentos, Fishermens Friend, bet-at-home, Fisher Sports, voest Alpine and many more.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                
+                
+
+
+            </div>
+                
+            </div>   
          </div>          
     </div>
+    <div class="pageTransitionHelper fromTop" rel="NewsBlog"></div>
+        <div class="pageTransitionHelper fromRight" rel="Contact"></div>
+        <div class="pageTransitionHelper fromBottom" rel="Projects"></div>
+        <div class="pageTransitionHelper fromLeft" rel="About"></div>
+
+
+        <div class="overlay-resize" >
+            <!--<div class="overlay-resize_text" data-text="RESIZING">--> 
+            <div class="overlay-resize_text" > 
+
+                <div > </div><div data-text="R" >R</div><div> </div><div data-text="E" >E</div><div> </div><div data-text="S" >S</div><div> </div><div data-text="I" >I</div><div> </div><div data-text="Z" >Z</div><div> </div><div data-text="I" >I</div><div> </div><div data-text="N" >N</div><div> </div><div data-text="G" >G</div><div> </div>
+            </div>
+        </div>
+
 
 </body>
 
